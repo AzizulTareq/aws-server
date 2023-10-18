@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
   res.send("my name is tareq");
 });
 
-app.listen(PORT, () => {
-  console.log(`app is running on ${PORT}!!`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(
+    `Server is running on ec2-54-174-125-1.compute-1.amazonaws.com:${PORT}`
+  );
 });
